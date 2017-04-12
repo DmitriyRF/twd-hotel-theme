@@ -1,0 +1,513 @@
+.heading-font {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.body-font {
+  font-family: 'Roboto', sans-serif;
+}
+.logo-font {
+  font-family: 'Gentium Book Basic', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #02bbbd;
+}
+a:hover,
+a:focus {
+  color: #01898b;
+}
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+hr.light {
+  border-color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 19px;
+}
+h5 {
+  font-size: 17px;
+}
+h6 {
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+}
+p {
+  font-size: 14px;
+  line-height: 1.47;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+li {
+  font-size: 14px;
+  line-height: 1.47;
+}
+@media (min-width: 992px) {
+  li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+header {
+  height: 100%;
+  background: transparent;
+  min-height: 700px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+header .bg-block-logo {
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+header .h2-logo {
+  font-family: 'Gentium Book Basic', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 60px;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #02bbbd;
+  color: white;
+}
+header .center-middle {
+  margin: 120px 0 20px;
+  position: absolute;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .name {
+  color: white;
+  position: relative;
+}
+header .logo-description {
+  color: #ccc;
+}
+header .link-down {
+  margin: 0 auto;
+}
+main section {
+  padding: 70px 0;
+}
+main .bg-grey-lighter {
+  background-color: #eeeeee;
+}
+.h1-section {
+  text-align: center;
+}
+.p-description-section {
+  text-align: center;
+  color: #ccc;
+}
+#about {
+  background-color: #02bbbd;
+}
+#about .wrapper-for-hide {
+  overflow: hidden;
+  max-height: 500px;
+}
+#about .img-about {
+  width: 100%;
+}
+#about .colomn-about {
+  background-color: white;
+  height: 100%;
+  padding: 30px;
+}
+#about .h1-about {
+  text-align: center;
+}
+#about .p-about {
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  #about .colomn-about,
+  #about .wrapper-for-hide {
+    height: 500px;
+    overflow: hidden;
+  }
+}
+#suggestions .hotel-wrapper {
+  margin: 10px;
+  margin: 10px 0;
+  background-color: #eee;
+}
+#suggestions .h-hotel-name {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+#suggestions .p-hotel-description {
+  text-align: justify;
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+#suggestions .what-to-love {
+  margin: 10px;
+}
+#suggestions .what-to-love .h-love-hotel {
+  text-align: center;
+}
+#suggestions .what-to-love .table-hotel td:nth-child(1) {
+  font-weight: 900;
+}
+#suggestions .what-to-love .table-hotel .td-col-1 {
+  width: 40%;
+}
+#suggestions .what-to-love .table-hotel .td-col-2 {
+  width: 60%;
+}
+#suggestions .amenities {
+  background-color: #03edef;
+  padding: 15px;
+}
+#suggestions .amenities .h-amenities-hotel {
+  text-align: center;
+}
+#suggestions .amenities .ul-amenities {
+  margin: 10px 0 0 15px;
+}
+#suggestions .contacts {
+  margin: 10px;
+}
+#suggestions .contacts .h-contact-hotel {
+  text-align: center;
+}
+#suggestions .contacts .table-contacts > tr td:first-child {
+  width: 35%;
+}
+#suggestions .contacts .table-contacts > trtd:nth-child(2) {
+  width: 65%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background: transparent;
+}
+.carousel-inner > .item,
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev,
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  -webkit-transition: transform 0.35s;
+  -moz-transition: transform 0.35s;
+  transition: transform 0.35s;
+}
+.carousel-indicators .active {
+  background-color: #02bbbd;
+}
+#services {
+  color: white;
+}
+#services .icon512 {
+  background-image: url("img/icons.jpg");
+  margin: 0 auto;
+  display: block;
+  background-size: 200%;
+  height: 256px;
+  width: 256px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #services .icon512 {
+    height: 200px;
+    width: 200px;
+  }
+}
+#services .icon-num-1 {
+  background-position: right bottom;
+}
+#services .icon-num-2 {
+  background-position: left top;
+}
+#services .icon-num-3 {
+  background-position: left bottom;
+}
+#services .icon-num-4 {
+  background-position: right top;
+}
+#services .service-wrapper {
+  margin: 15px 0px 0 0;
+  background-color: white;
+  min-height: 600px;
+  color: black;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  #services .service-wrapper {
+    margin: 10px -10px;
+  }
+}
+#services .service-wrapper .icon-service {
+  padding: 15px;
+}
+#services .service-wrapper:hover {
+  -ms-transform: translate(0, -4px);
+  transform: translate(0, -4px);
+  box-shadow: 0 5px 6px rgba(14, 27, 31, 0.2);
+}
+#services .service-wrapper:hover.icon512 {
+  background-image: url("img/icons-c.jpg");
+}
+#services .h-service-name {
+  margin: 15px 0 0;
+  text-align: center;
+}
+#services .ul-service-point {
+  padding: 30px 0 30px 30px;
+}
+.form-control {
+  height: auto;
+  font-size: 16px;
+}
+.btn {
+  font-size: 16px;
+}
+.form-control:focus {
+  border-color: #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: 0;
+}
+#form .p-description-subscribe {
+  margin: 20px auto 0px;
+  max-width: 700px;
+  text-align: center;
+  display: block;
+}
+#form .group-subscribe {
+  margin: 50px 0;
+}
+#form .input-subscribe {
+  border-color: #cccccc;
+  border-width: 5px;
+  padding: 15px 25px;
+  border-right-style: none;
+}
+#form .input-subscribe:active,
+#form .input-subscribe:focus {
+  border-color: #02bbbd;
+}
+#form .button-subscribe {
+  padding: 24px 30px;
+  border-width: 0px;
+  text-transform: uppercase;
+  border-color: #02bbbd;
+  background-color: #02bbbd;
+}
+#form .input-group-btn:last-child > .btn,
+#form .input-group-btn:last-child > .btn-group {
+  margin-left: 0px;
+}
+#instagram .instagram-image {
+  margin: 5px -10px;
+}
+#instagram .instagram-image img {
+  width: 100%;
+}
+.footer {
+  background-color: #555;
+  min-height: 300px;
+  color: white;
+}
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #02bbbd;
+}
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #02bbbd;
+}
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #222222;
+}
+
+
+
+div.wpcf7-mail-sent-ok {
+}
+div.wpcf7-response-output {
+    padding: 15px 25px;
+    border-width: 5px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (min-width: 48em){
+  .site-footer {
+      margin-top: 0;
+}
+}
