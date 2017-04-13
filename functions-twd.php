@@ -566,34 +566,10 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 
-/*
-/////////////////////////////////////////////////////////////////////
-////////   ////////////   ///           ///   ///////     ///////////
-////////       ///         ///    //    //    ///    //   ///////////
-////////       ///          /// //  // //     ///    //   ///////////
-////////       ///           ///      //      ///////     ///////////
-/////////////////////////////////////////////////////////////////////
-*/
-function add_scripts_in_front_page(){
-    if( is_front_page() && !is_home()) {
-        //wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
-        //wp_enqueue_style( $handle, $src, $deps, $ver, $media );
-        wp_enqueue_style( 'bootstrap-css',      get_template_directory_uri() . '/twd/lib/bootstrap/css/bootstrap.css', array(), false, 'all' );
-        wp_enqueue_style( 'font-awesome-css',   get_template_directory_uri() . '/twd/lib/font-awesome/css/font-awesome.min.css', array(), false, 'all' );
-        wp_enqueue_style( 'twd-style-css',      get_template_directory_uri() . '/twd/lib/twd-style.css', array(), false, 'all' );
-        wp_enqueue_script( 'bootstrap-js',      get_template_directory_uri() . '/twd/lib/bootstrap/js/bootstrap.js', array(), null, true );
-        wp_enqueue_script( 'parallax-js',       get_template_directory_uri() . '/twd/lib/parallax/parallax.js', array(), null, true );
-        wp_enqueue_script( 'twd-script-js',     get_template_directory_uri() . '/twd/lib/twd-script.js', array(), null, true );
-//        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        wp_enqueue_style( 'twd-google-fonts', twd_fonts_url(), array(), false ,'all');
-    }
-}
-add_action( 'wp_enqueue_scripts', 'add_scripts_in_front_page' );
-function add_head_to_front_page(){
-    if( is_front_page() && !is_home()) {
 
-    }
-}add_action('wp_head','add_head_to_front_page');
+
+
+
 
 
 //Separate function
@@ -660,43 +636,6 @@ include(get_template_directory().'/twd/framework/theme-options.php'); //Theme Op
 
 
 
-require_once dirname( __FILE__ ) . '/twd/tgmpa/class-tgm-plugin-activation.php';
-add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
-function my_theme_register_required_plugins() {
-	$plugins = array(
-		array(
-			'name'      => 'Kirki Toolkit',
-			'slug'      => 'kirki',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Flamingo',
-			'slug'      => 'flamingo',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Contact Form 7 ',
-			'slug'      => 'contact-form-7',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Instagram Feed ',
-			'slug'      => 'instagram-feed',
-			'required'  => false,
-		)
-	);
-	$config = array(
-		'id'           => 'twd',                 // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                      // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins', // Menu slug.
-		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-		'message'      => '',                      // Message to output right before the plugins table.
-	);
-	tgmpa( $plugins, $config );
-}
+
 
 
