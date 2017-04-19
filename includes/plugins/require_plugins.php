@@ -1,8 +1,8 @@
 <?php
 
-require_once TWD_DIR . '/includes/tgmpa/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/includes/tgmpa/class-tgm-plugin-activation.php';
 
-function my_theme_register_required_plugins() {
+function twd_register_required_plugins() {
 	$plugins = array(
 		array(
 			'name'      => 'Kirki Toolkit',

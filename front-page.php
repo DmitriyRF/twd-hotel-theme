@@ -38,7 +38,6 @@ get_header($name); ?>
                                 <li>Nostrum enim rerum labore.</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>

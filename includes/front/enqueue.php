@@ -1,22 +1,28 @@
 <?php
 
-function twd_function_enqueue_script(){
+function twd_enqueue_script(){        
 
-	    if( is_front_page() && !is_home()) {
 
-        //wp_enqueue_style( $handle, $src, $deps, $ver, $media );
-        wp_enqueue_style( 'bootstrap-css',      TWD_ASSETS . '/bootstrap/css/bootstrap.css', array(), false, 'all' );
-        wp_enqueue_style( 'font-awesome-css',   TWD_ASSETS . '/font-awesome/css/font-awesome.min.css', array(), false, 'all' );
-        wp_enqueue_style( 'twd-style-css',      TWD_ASSETS . '/twd/twd-style.css', array(), false, 'all' );
+        wp_register_style( 'bootstrap-css',      get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.css', array(), false, 'all' );
+        wp_register_style( 'font-awesome-css',   get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css', array(), false, 'all' );
+        wp_register_style( 'twd-style-css',      get_template_directory_uri() . '/assets/twd/twd-style.css', array(), false, 'all' );
 
-		//wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
-        wp_enqueue_script( 'bootstrap-js',      TWD_ASSETS . '/bootstrap/js/bootstrap.js', array(), null, true );
-        wp_enqueue_script( 'parallax-js',       TWD_ASSETS . '/parallax/parallax.js', array(), null, true );
-        wp_enqueue_script( 'twd-script-js',     TWD_ASSETS . '/twd/twd-script.js', array(), null, true );
+		wp_register_script( 'jquery-easing', 	'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
+		wp_register_script( 'bootstrap-js',     get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js', array(), null, true );
+        wp_register_script( 'parallax-js',      get_template_directory_uri() . '/assets/parallax/parallax.js', array(), null, true );
+        wp_register_script( 'twd-script-js',    get_template_directory_uri() . '/assets/twd/twd-script.js', array(), null, true );
 
-		// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        // wp_enqueue_style( 'twd-google-fonts', twd_fonts_url(), array(), false ,'all');
-    
+	if( is_front_page() && !is_home()) {
+
+		wp_enqueue_style( 'bootstrap-css' );
+		wp_enqueue_style( 'font-awesome-css' );
+		wp_enqueue_style( 'twd-style-css' );
+		
+		wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery-easing');
+        wp_enqueue_script('bootstrap-js');
+        wp_enqueue_script('parallax-js');
+        wp_enqueue_script('twd-script-js');
     }
 	
 }
