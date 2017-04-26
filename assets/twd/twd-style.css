@@ -445,11 +445,15 @@ main .bg-grey-lighter {
   border-right-style: none;
 }
 #form .input-subscribe:active,
-#form .input-subscribe:focus {
+#form .input-subscribe:focus,
+#form .input-subscribe:hover {
+  border-color: #02bbbd;
+}
+#form .add-color-to-border{
   border-color: #02bbbd;
 }
 #form .button-subscribe {
-  padding: 24px 30px;
+  padding: 20px 30px;
   border-width: 0px;
   text-transform: uppercase;
   border-color: #02bbbd;

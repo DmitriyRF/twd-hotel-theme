@@ -406,95 +406,13 @@ get_header($name); ?>
                     <h1 class="h1-section">Subscribe</h1>
                     <p class="p-description-subscribe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus obcaecati dolor quis vel eos natus ratione cupiditate quia sapiente reprehenderit voluptas repellendus, culpa, cum provident? Tempora dolorum quam recusandae.</p>
                     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-                        <!-- <div class="input-group group-subscribe"> -->
                             <?php echo do_shortcode('[contact-form-7 id="38" title="Sub"]');?>
-<!--                             <input type="email" class="input-subscribe form-control" placeholder="Enter your email">
-                            <span class="input-group-btn">
-					        	<button class="btn button-subscribe" type="button">Subscribe</button>
-					      	</span> -->
-                        <!-- </div>/input-group -->
                     </div>
                 </div>
             </div>
         </section>
         <section id="instagram" class="bg-grey-lighter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
-                        </div>
-                        <h1 class="h1-section">Instagram</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <?php echo do_shortcode('[instagram-feed]');?>
-                    </div>
-                   <!--  <div class="images-block">
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-3 col-md-2">
-                            <div class="instagram-image">
-                                <img src="img/about-twd.png" alt="">
-                            </div>
-                        </div>
-                    </div> -->
-                </div> 
-            </div>
+            <?php dynamic_sidebar( 'sidebar-for-shotrcode' ); ?>
         </section>
 
 	</main><!-- #main -->

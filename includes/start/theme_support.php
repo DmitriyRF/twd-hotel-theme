@@ -75,7 +75,8 @@ function twd_theme_support(){
 	add_theme_support( 'customize-selective-refresh-widgets' );
 	add_theme_support( 'post-formats', $defaults_post_format );
 	add_theme_support( 'post-thumbnails', $defaults_post_thumbnails );
-	add_theme_support( 'menus');
+	add_theme_support( 'widgets' );
+	add_theme_support( 'menus' );
 	
 
 
