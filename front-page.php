@@ -11,7 +11,8 @@
  * @since 1.0
  * @version 1.0
  */
-$name ='twd';
+$theme_options                  = get_option('twd_opts');
+$name                           ='twd';
 get_header($name); ?>
 
 <div id="primary" class="content-area">
@@ -21,7 +22,7 @@ get_header($name); ?>
                 <div class="row">
                     <div class="col-xs-12 col-sm-7">
                         <div class="wrapper-for-hide">
-                            <img class="img img-about" src="img/about-twd.png" alt="image for about digital agency of hotels">
+                            <img class="img img-about" src="<?php  if( !empty($theme_options['about_us_img']) ){echo $theme_options['about_us_img'];} ?>" alt="image for about digital agency of hotels">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-5">
@@ -29,14 +30,20 @@ get_header($name); ?>
                             <div class="text-center">
                                 <i class="fa fa-3x fa-users" aria-hidden="true"></i>
                             </div>
-                            <h1 class="h1-about">About us</h1>
-                            <p class="p-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quod modi, voluptas ab. Atque, vel. Iure repudiandae aliquid, accusantium iste vero eligendi magni minus, fugiat repellendus consequatur blanditiis earum tempore!</p>
-                            <ul>
-                                <li>Lorem ipsum dolor sit.</li>
-                                <li>Quam, aut officiis dolore.</li>
-                                <li>Neque voluptas perferendis itaque.</li>
-                                <li>Nostrum enim rerum labore.</li>
-                            </ul>
+                            <h1 class="h1-about">
+                                <?php
+                                        if( !empty($theme_options['about_us_header']) ){
+                                            echo $theme_options['about_us_header'];
+                                        }
+                                ?>
+                            </h1>
+                            <p class="p-about">
+                                <?php
+                                    if( !empty($theme_options['about_us_text']) ){
+                                                echo $theme_options['about_us_text'];
+                                    }
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div>

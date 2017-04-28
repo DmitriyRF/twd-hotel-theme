@@ -1,0 +1,62 @@
+
+
+
+input[type=text], 
+input[type=search], 
+input[type=radio], 
+input[type=tel], 
+input[type=time], 
+input[type=url], 
+input[type=week], 
+input[type=password], 
+input[type=checkbox], 
+input[type=color], 
+input[type=date], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=email], 
+input[type=month], 
+input[type=number], 
+select, 
+textarea{
+	width: 99%;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.input-group-btn{
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.input-group-text{
+	display: table-cell;
+	vertical-align: middle;
+	width: 99%;
+	margin-left: 0px
+}
+
+.input-group-button{
+	white-space: nowrap;
+	margin-right: -2px;	
+}
+
+@media screen and (max-width: 782px){
+
+	.input-group-button{
+		width: 100%;
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 7px 10px;
+		max-height: 40px;
+		overflow: hidden;
+	}
+
+}
