@@ -36,7 +36,7 @@ class paste_shortcode_widget extends WP_Widget{          // The example widget c
 		// echo $args['before_widget'];
 		?>
             <div class="container">
-            <?php if ( ! empty( $instance['use_title_icon'] ) ) { ?>
+            <?php if ( ! empty( $instance['use_title_icon'] ) && $instance['use_title_icon'] =='on' ) { ?>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="text-center">

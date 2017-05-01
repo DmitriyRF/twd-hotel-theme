@@ -255,8 +255,10 @@ main .bg-grey-lighter {
   max-height: 500px;
 }
 #about .img-about {
-  width: 100%;
-}
+  min-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  }
 #about .colomn-about {
   background-color: white;
   height: 100%;

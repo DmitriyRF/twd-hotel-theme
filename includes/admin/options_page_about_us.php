@@ -1,5 +1,6 @@
 <?php
 
+
 function twd_theme_options_page(){
 
 
@@ -11,9 +12,11 @@ function twd_theme_options_page(){
 		);
 	}
 	$theme_options 										= get_option('twd_opts');
+	$title 												= __( 'TWD Theme Settings' );
+	
 ?>
 	<div class="wrap">
-		<h1> <?php _e( 'TWD THEME OPTIONS', 'twd'); ?> </h1>
+		<h1><?php echo esc_html( $title ); ?></h1>
 		<form method="post" action="admin-post.php">
 			<input type="hidden" name="action" value="twd_save_options">
 			<?php wp_nonce_field('twd_options_verify');?>
@@ -74,13 +77,12 @@ function twd_theme_options_page(){
 						</div>
 					</td>
 				</tr>
-				<tr>
-					<th>
-						<button class="button button-primary" type="submit"><?php _e('Save Changes', 'twd');?></button>
-					</th>
-				</tr>
 
 			</table>
+
+			<?php do_settings_sections( 'twd_theme_options' ); ?>
+
+			<?php submit_button(); ?>
 		</form>
 	</div>
 
