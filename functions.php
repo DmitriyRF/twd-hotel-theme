@@ -35,6 +35,7 @@ add_action('after_setup_theme', 	'twd_theme_support');//includes/start/theme_sup
 add_action('wp_enqueue_scripts', 	'twd_enqueue_script');//includes/front/enqueue.php
 add_action('wp_enqueue_scripts', 	'twd_add_fonts');//includes/front/add_fonts.php
 add_action('after_switch_theme', 	'min_wordpress_version_for_twd_theme');//includes/front/activate.php
+add_action('after_switch_theme', 	'twd_add_theme_database');//includes/front/activate.php
 add_action('tgmpa_register', 		'twd_register_required_plugins');//includes/plugins/require_plugins.php
 add_action('widgets_init', 			'twd_register_sidebars');//includes/widgets/register_sidebars.php
 add_action('widgets_init', 			'twd_register_widgets');//includes/widgets/register_widgets.php

@@ -38,7 +38,6 @@ function twd_admin_menus(){
 
 	);
 
-
 	add_submenu_page(
 
 		'twd_theme_options',
@@ -51,8 +50,6 @@ function twd_admin_menus(){
 
 	);
 
-
-
 	add_submenu_page(
 
 		'twd_theme_options',
@@ -64,6 +61,5 @@ function twd_admin_menus(){
         'twd_subscribe_options_page'
 
 	);
-
 
 }

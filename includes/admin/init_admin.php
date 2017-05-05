@@ -9,4 +9,5 @@ function twd_admin_init(){
 
 	add_action('admin_post_twd_save_options', 'twd_save_about_us_options');
 
+	add_action('admin_post_twd_add_hotel', 'twd_save_new_hotel');
 }

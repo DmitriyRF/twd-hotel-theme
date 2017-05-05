@@ -21,6 +21,9 @@ select,
 textarea{
 	width: 99%;
 }
+.form-table td {
+    padding: 15px 10px 15px 0;
+}
 
 .input-group {
     position: relative;
