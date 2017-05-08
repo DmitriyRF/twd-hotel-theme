@@ -56,7 +56,6 @@ function wpdb_update_hotel(	$f_hotel_id 				= "1",
 		array( '%s', '%s', '%s', '%s', '%s', '%s'),
 		array( '%d' )
 	);
-
 }
 
 function wpdb_get_hotel($f_hotel_id){
@@ -65,10 +64,22 @@ function wpdb_get_hotel($f_hotel_id){
 
 	$table_name 				= $wpdb->get_blog_prefix() . 'twd_hotels';
 
-	$wpdb->get_row('query', $output_type, $row_offset);
+	return $wpdb->get_row("SELECT $f_hotel_id FROM $table_name");
+}
 
-	return $wpdb->get_row("SELECT $f_hotel_id FROM $wpdb->$table_name");
+function wpdb_get_all_hotels( $limit_start = 0, $limit = 0 ){
 
+	global $wpdb;
+
+	$table_name 				= $wpdb->get_blog_prefix() . 'twd_hotels';
+
+	if($limit == 0 ){
+		$table_object 			= $wpdb->get_results("SELECT * FROM $table_name");
+	}else{
+		$table_object 			= $wpdb->get_results("SELECT * FROM $table_name LIMIT $limit_start, $limit");
+	}
+
+	return $table_object;
 }
 
 
@@ -76,6 +87,7 @@ function wpdb_get_hotel($f_hotel_id){
 function wpdb_delete_hotel($f_hotel_id){
 	global $wpdb;
 	$table_name 				= $wpdb->get_blog_prefix() . 'twd_hotels';
+
 	//true or false
 	$delete_return = $wpdb->delete( 
 		$table_name, 

@@ -31,7 +31,7 @@ function twd_save_new_hotel(){
 	}
 
 	check_admin_referer('twd_add_hotel_verify');
-	include( get_template_directory() . '/includes/admin/hotels_data.php');
+	require_once (  dirname( dirname( __FILE__ ) ) . '/includes/admin/hotels_data.php');
 
 	wpdb_insert_hotel(		$_POST['input_hotel_name'], 
 							$_POST['textarea_hotel_description'], 

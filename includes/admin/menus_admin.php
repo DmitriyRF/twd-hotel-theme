@@ -26,7 +26,7 @@ function twd_admin_menus(){
 
 	);	
 
-	add_submenu_page(
+	$hook = add_submenu_page(
 
 		'twd_theme_options',
 		
@@ -62,4 +62,17 @@ function twd_admin_menus(){
 
 	);
 
+	add_action( "load-$hook", 'add_options' );
+ 
+	function add_options() {
+
+		$option = 'per_page';
+	  	$args = array(
+	         'label' => 'Hotels',
+	         'default' => 5,
+	         'option' => 'hotels_per_page'
+	         );
+
+	  add_screen_option( $option, $args );  	
+	}
 }

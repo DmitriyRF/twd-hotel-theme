@@ -12,7 +12,13 @@
  * @version 1.0
  */
 $theme_options                  = get_option('twd_opts');
-$name                           ='twd';
+$name                           = __('TWD','twd');
+
+    global $wpdb;
+    $table_name                 = $wpdb->get_blog_prefix() . 'twd_hotels';
+    $table_objects              = $wpdb->get_results("SELECT * FROM $table_name LIMIT 3");
+
+
 get_header($name); ?>
 
 <div id="primary" class="content-area">
@@ -41,7 +47,7 @@ get_header($name); ?>
                                 <?php
                                     if( !empty($theme_options['about_us_text']) ){
                                                 echo $theme_options['about_us_text'];
-                                    }
+                                    } 
                                 ?>
                             </p>
                         </div>
@@ -61,270 +67,138 @@ get_header($name); ?>
                     </div>
                 </div>
                 <div class="row">
+                <?php
+                    foreach ($table_objects as $key => $hotel) {
+                                    // hotel_id
+                                    // hotel_name 
+                                    // hotel_description
+                                    // hotel_loves
+                                    // hotel_image_url
+                                    // hotel_amenities
+                                    // hotel_contacts
+                ?>    
                     <div class="col-xs-12 col-sm-4">
                         <div class="hotel-wrapper">
+                            <?php
+                                $any_images =  explode('| ', $hotel->hotel_image_url);
+                            ?>
                             <div class="slider">
-                                <div id="carousel-hotel1-generic" class="carousel slide" data-wrap="true" data-ride="carousel" data-interval="false">
+                                <div id="carousel-hotel<?php echo $key; ?>-generic" class="carousel slide" data-wrap="true" data-ride="carousel" data-interval="false">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
-                                        <li data-target="#carousel-hotel1-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-hotel1-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-hotel1-generic" data-slide-to="2"></li>
+                                    <?php 
+                                            $count_of_images = count($any_images);
+                                            for ($i = 0; $i < $count_of_images; $i++) {
+                                    ?>                                    
+                                        <li data-target="#carousel-hotel<?php echo $key; ?>-generic" data-slide-to="<?php echo $i; ?>" <?php echo $i == 0 ? 'class="active"' : ''?>></li>
+                                    <?php 
+                                            }
+                                    ?>                                        
                                     </ol>
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="img/hotels/1.jpg" alt="image of hotel">
+                                    <?php 
+                                        $f_num = 0;
+                                        foreach ($any_images as $image) {
+                                            if( $image != ''){
+                                                $f_num++;
+                                    ?>                                    
+                                        <div class="item <?php echo $f_num == 1 ? "active" : ""?>">
+                                            <img src="<?php echo $image; ?>" alt="image of hotel">
                                         </div>
-                                        <div class="item">
-                                            <img src="img/hotels/2.jpg" alt="image of hote">
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/hotels/3.jpg" alt="image of hote">
-                                        </div>
+                                    <?php 
+                                            }
+                                        }
+                                    ?>                                        
                                     </div>
                                     <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-hotel1-generic" data-slide="prev">
+                                    <a class="left carousel-control" href="#carousel-hotel<?php echo $key; ?>-generic" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
                                     </a>
-                                    <a class="right carousel-control" href="#carousel-hotel1-generic" data-slide="next">
+                                    <a class="right carousel-control" href="#carousel-hotel<?php echo $key; ?>-generic" data-slide="next">
                                         <span class="glyphicon glyphicon-chevron-right"></span>
                                     </a>
                                 </div>
                             </div>
-                            <h3 class="h-hotel-name">Hotel five likes</h3>
-                            <p class="p-hotel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium ratione obcaecati doloribus dignissimos ea sunt atque quibusdam sint ipsam.</p>
+                            <?php
+
+                            ?>                            
+                            <h3 class="h-hotel-name"><?php _e($hotel->hotel_name,'twd') ?></h3>
+                            <p class="p-hotel-description"><?php _e($hotel->hotel_description,'twd') ?></p>
                             <div class="what-to-love">
                                 <h5 class="h-love-hotel">What to love?</h5>
-                                <table class="table">
-                                    <!-- 			<caption class="caption-table-hotel">What to love?</caption> -->
-                                    <tbody class="table-hotel">
-                                    <tr>
-                                        <td class="td-col-1">Fact 1</td>
-                                        <td class="td-col-2">F1 description...</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 2</td>
-                                        <td>F2 description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 3</td>
-                                        <td>F3 description...</td>
-                                    </tr>
-                                    </tbody>
+                                <table class="table table-hotel">
+                                    <?php 
+                                        $any_facts =  explode('| ', $hotel->hotel_loves);
+                                         $f_num = 0;
+                                        foreach ($any_facts as $fact) {
+                                            if( $fact != '' ){
+                                                $f_num++;
+                                    ?>
+                                            <tr>
+                                                <td class="td-col-1">Fact <?php echo $f_num; ?></td>
+                                                <td class="td-col-2"><?php echo $fact; ?></td>
+                                            </tr>
+                                     <?php
+                                            }
+                                        }
+                                     ?>
                                 </table>
                             </div>
                             <div class="amenities">
                                 <h5 class="h-amenities-hotel">TWD amenities</h5>
                                 <ul class="ul-amenities">
-                                    <li>Good</li>
-                                    <li>Cool</li>
-                                    <li>Best</li>
-                                    <li>Greate</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil natus rerum, veritatis omnis ducimus molestias vero voluptates consequuntur quas ratione reiciendis mollitia maiores hic exercitationem est tempora, dolorum tenetur eaque.</li>
+                                    
+                                    <?php 
+                                        $any_amenities =  explode('| ', $hotel->hotel_amenities);
+                                        $f_num = 0;
+                                        foreach ($any_amenities as $amenite) {
+                                            if( $amenite != '' ){
+                                                $f_num++;
+                                    ?>
+                                            <li><?php echo $amenite; ?></li>
+                                     <?php
+                                            }
+                                        }
+                                     ?>
                                 </ul>
                             </div>
                             <div class="contacts">
                                 <h5 class="h-contact-hotel">Contacts</h5>
+                                <?php  $any_contacts =  explode('| ', $hotel->hotel_contacts);?>
                                 <table class="table">
                                     <tbody class="tbody table-contacts">
+                                    <?php if ($any_contacts[0] != '') {
+                                    ?>                                        
                                     <tr>
                                         <td>Country</td>
-                                        <td>India</td>
+                                        <td><?php echo $any_contacts[0]; ?></td>
                                     </tr>
+                                    <?php
+                                    }if ($any_contacts[1] != '') {
+                                    ?>                                                                            
                                     <tr>
                                         <td>Town</td>
-                                        <td>India</td>
+                                        <td><?php echo $any_contacts[1]; ?></td>
                                     </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>Main street 92</td>
-                                    </tr>
+                                    <?php
+                                    }if ($any_contacts[2] != '') {
+                                    ?>
                                     <tr>
                                         <td>Phone</td>
-                                        <td>+135 125-15-54</td>
+                                        <td><?php echo $any_contacts[2]; ?></td>
                                     </tr>
+                                    <?php
+                                    }
+                                    ?> 
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="hotel-wrapper">
-                            <div class="slider">
-                                <div id="carousel-hotel2-generic" class="carousel slide" data-wrap="true" data-ride="carousel" data-interval="false">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-hotel2-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-hotel2-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-hotel2-generic" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="img/hotels/1.jpg" alt="image of hotel">
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/hotels/3.jpg" alt="image of hote">
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/hotels/2.jpg" alt="image of hote">
-                                        </div>
-                                    </div>
-                                    <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-hotel2-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-hotel2-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="h-hotel-name">Hotel six likes</h3>
-                            <p class="p-hotel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium ratione obcaecati doloribus dignissimos ea sunt atque quibusdam sint ipsam.</p>
-                            <div class="what-to-love">
-                                <h5 class="h-love-hotel">What to love?</h5>
-                                <table class="table">
-                                    <!-- 			<caption class="caption-table-hotel">What to love?</caption> -->
-                                    <tbody class="table-hotel">
-                                    <tr>
-                                        <td class="td-col-1">Fact 1</td>
-                                        <td class="td-col-2">F1 description...</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 2</td>
-                                        <td>F2 description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 3</td>
-                                        <td>F3 description...</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="amenities">
-                                <h5 class="h-amenities-hotel">TWD amenities</h5>
-                                <ul class="ul-amenities">
-                                    <li>Good</li>
-                                    <li>Cool</li>
-                                    <li>Best</li>
-                                    <li>Greate</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil natus rerum, veritatis omnis ducimus molestias vero voluptates consequuntur quas ratione reiciendis mollitia maiores hic exercitationem est tempora, dolorum tenetur eaque.</li>
-                                </ul>
-                            </div>
-                            <div class="contacts">
-                                <h5 class="h-contact-hotel">Contacts</h5>
-                                <table class="table">
-                                    <tbody class="tbody table-contacts">
-                                    <tr>
-                                        <td>Country</td>
-                                        <td>India</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Town</td>
-                                        <td>India</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>Main street 92</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone</td>
-                                        <td>+135 125-15-54</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="hotel-wrapper">
-                            <div class="slider">
-                                <div id="carousel-hotel3-generic" class="carousel slide" data-wrap="true" data-ride="carousel" data-interval="false">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-hotel3-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-hotel3-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-hotel3-generic" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="img/hotels/1.jpg" alt="image of hotel">
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/hotels/2.jpg" alt="image of hote">
-                                        </div>
-                                        <div class="item">
-                                            <img src="img/hotels/3.jpg" alt="image of hote">
-                                        </div>
-                                    </div>
-                                    <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-hotel3-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-hotel3-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="h-hotel-name">Hotel four likes</h3>
-                            <p class="p-hotel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium ratione obcaecati doloribus dignissimos ea sunt atque quibusdam sint ipsam.</p>
-                            <div class="what-to-love">
-                                <h5 class="h-love-hotel">What to love?</h5>
-                                <table class="table">
-                                    <!-- 			<caption class="caption-table-hotel">What to love?</caption> -->
-                                    <tbody class="table-hotel">
-                                    <tr>
-                                        <td class="td-col-1">Fact 1</td>
-                                        <td class="td-col-2">F1 description...</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 2</td>
-                                        <td>F2 description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorem.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fact 3</td>
-                                        <td>F3 description...</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="amenities">
-                                <h5 class="h-amenities-hotel">TWD amenities</h5>
-                                <ul class="ul-amenities">
-                                    <li>Good</li>
-                                    <li>Cool</li>
-                                    <li>Best</li>
-                                    <li>Greate</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil natus rerum, veritatis omnis ducimus molestias vero voluptates consequuntur quas ratione reiciendis mollitia maiores hic exercitationem est tempora, dolorum tenetur eaque.</li>
-                                </ul>
-                            </div>
-                            <div class="contacts">
-                                <h5 class="h-contact-hotel">Contacts</h5>
-                                <table class="table">
-                                    <tbody class="tbody table-contacts">
-                                    <tr>
-                                        <td>Country</td>
-                                        <td>India</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Town</td>
-                                        <td>India</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>Main street 92</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone</td>
-                                        <td>+135 125-15-54</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                <?php
+                    }               
+                ?>        
                 </div>
             </div>
         </section>

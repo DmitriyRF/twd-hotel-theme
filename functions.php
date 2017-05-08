@@ -52,4 +52,9 @@ add_action('after_setup_theme', function(){
 // shortcondes
 add_shortcode( 'twd', 'twd_shortcode_handler' );//includes/shortcode/twd_shortcode_handler.php
 
+add_filter('set-screen-option', 'test_table_set_option', 10, 3);
+function test_table_set_option($status, $option, $value) {
+	return $value;
+}
+
 ?>
