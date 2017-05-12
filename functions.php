@@ -23,6 +23,7 @@ include(get_template_directory() . '/includes/admin/init_admin.php');
 // include(get_template_directory() . '/includes/admin/options_page.php');
 include(get_template_directory() . '/includes/admin/options_page_about_us.php');
 include(get_template_directory() . '/includes/admin/options_page_add_hotel.php');
+include(get_template_directory() . '/includes/admin/options_page_edit_hotel.php');
 include(get_template_directory() . '/includes/admin/options_page_hotels.php');
 include(get_template_directory() . '/includes/admin/options_page_subscribe.php');
 include(get_template_directory() . '/process/save_options.php');
@@ -40,6 +41,7 @@ add_action('tgmpa_register', 		'twd_register_required_plugins');//includes/plugi
 add_action('widgets_init', 			'twd_register_sidebars');//includes/widgets/register_sidebars.php
 add_action('widgets_init', 			'twd_register_widgets');//includes/widgets/register_widgets.php
 add_action('admin_menu',			'twd_admin_menus');//includes/admin/menus.php'
+// add_action('admin_menu', 			'twd_disable_edit_hotel_page');//includes/admin/init.php'
 add_action('admin_init',			'twd_admin_init');//includes/admin/init.php'
 add_action('admin_init', 			'subscribe_settings_init' );//includes/admin/api_init.php
 

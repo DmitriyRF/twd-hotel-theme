@@ -15,7 +15,7 @@
 ?>
 
 		</div><!-- #content -->
-
+        <?php if( isset( get_theme_mod( 'footer_header') ) ){ ?>
 		<footer id="colophon" class="site-footer footer" role="contentinfo">
             <div class="container">
                 <div class="row">
@@ -23,11 +23,12 @@
                         <!-- 					<div class="text-center">
                                                 <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
                                             </div> -->
-                        <h1 class="h1-section">Footer/Contacts</h1>
+                        <h1 class="h1-section"><?php  echo get_theme_mod( 'footer_header'); ?></h1>
                     </div>
                 </div>
             </div>
 		</footer><!-- #colophon -->
+        <?php }?>
 </div><!-- #page -->
 <?php wp_footer(); ?>
 

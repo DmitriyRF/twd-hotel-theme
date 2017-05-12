@@ -36,7 +36,7 @@ function subscribe_settings_init() {
 	// Добавляем блок опций на базовую страницу "Чтение"
 	add_settings_section(
 		'eg_setting_section', // секция
-		'Заголовок для секции настроек',
+		'By contact form',
 		'eg_setting_section_callback_function',
 		'twd_subscribe_options' // страница
 	);
@@ -44,16 +44,16 @@ function subscribe_settings_init() {
 	// Добавляем поля опций. Указываем название, описание, 
 	// функцию выводящую html код поля опции.
 	add_settings_field(
-		'eg_setting_name',
-		'Описание поля опции',
+		'use_shortcode_section',
+		'Use Subscribe section?',
 		'eg_setting_callback_function', // можно указать ''
 		'twd_subscribe_options', // страница
 		'eg_setting_section' // секция
 	);
 	
 	add_settings_field(
-		'eg_setting_name2',
-		'Описание поля опции2',
+		'Shortcode_by_contact_form',
+		'Shortcode by contact form 7',
 		'eg_setting_callback_function2',
 		'twd_subscribe_options', // страница
 		'eg_setting_section' // секция
@@ -61,8 +61,8 @@ function subscribe_settings_init() {
 
 	// Регистрируем опции, чтобы они сохранялись при отправке 
 	// $_POST параметров и чтобы callback функции опций выводили их значение.
-	register_setting( 'twd_subscribe_options', 'eg_setting_name' );
-	register_setting( 'twd_subscribe_options', 'eg_setting_name2' );
+	register_setting( 'twd_subscribe_options', 'use_shortcode_section' );
+	register_setting( 'twd_subscribe_options', 'Shortcode_by_contact_form' );
 }
 
 // ------------------------------------------------------------------
@@ -75,7 +75,7 @@ function subscribe_settings_init() {
 // параметре add_settings_section
 //
 function eg_setting_section_callback_function() {
-	echo '<p>Текст описывающий блок настроек</p>';
+	echo '<p>Subscribe settings fields</p>';
 }
 
 // ------------------------------------------------------------------
@@ -86,18 +86,18 @@ function eg_setting_section_callback_function() {
 //
 function eg_setting_callback_function() {
 	echo '<input 
-		name="eg_setting_name" 
-		id="eg_setting_name"
+		name="use_shortcode_section" 
+		id="use_shortcode_section"
 		type="checkbox" 
-		' . checked( 1, get_option( 'eg_setting_name' ), false ) . ' 
+		' . checked( 1, get_option( 'use_shortcode_section' ), false ) . ' 
 		value="1" 
 	/>';
 }
 function eg_setting_callback_function2() {
 	echo '<input 
-		name="eg_setting_name2"  
-		id="eg_setting_name2"
+		name="Shortcode_by_contact_form"  
+		id="Shortcode_by_contact_form"
 		type="text" 
-		value="' . get_option( 'eg_setting_name2' ) . '"
+		value="' . get_option( 'Shortcode_by_contact_form' ) . '"
 	 />';
 }

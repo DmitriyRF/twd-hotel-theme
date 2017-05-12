@@ -64,7 +64,7 @@ function wpdb_get_hotel($f_hotel_id){
 
 	$table_name 				= $wpdb->get_blog_prefix() . 'twd_hotels';
 
-	return $wpdb->get_row("SELECT $f_hotel_id FROM $table_name");
+	return $wpdb->get_row("SELECT * FROM $table_name WHERE hotel_id = $f_hotel_id");
 }
 
 function wpdb_get_all_hotels( $limit_start = 0, $limit = 0 ){

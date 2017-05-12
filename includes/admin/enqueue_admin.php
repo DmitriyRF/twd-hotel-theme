@@ -7,6 +7,7 @@ function twd_admin_enqueue(){
 		$_GET['page'] != 'twd_theme_options' &&
 		$_GET['page'] != 'twd_subscribe_options' &&
 		// $_GET['page'] != 'twd_hotels_options' &&
+		$_GET['page'] != 'twd_edit_hotel_options' &&
 		$_GET['page'] != 'twd_add_hotel_options'){
 		return;
 	}

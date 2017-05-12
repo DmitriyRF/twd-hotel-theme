@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="center-middle">
-            <h1 class="name">Digital Marketing Agency for Hotels</h1>
-            <p class="logo-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium hic nulla, amet consequatur necessitatibus.</p>
+            <h1 class="name"><?php echo get_theme_mod( 'senter_text_name'); ?></h1>
+            <p class="logo-description"><?php echo get_theme_mod( 'senter_text_description', 'some text'); ?></p>
             <a href="#about" class="page-scroll link-down"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></a>
         </div>
 

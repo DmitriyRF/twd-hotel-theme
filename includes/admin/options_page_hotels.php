@@ -21,10 +21,10 @@ Function twd_hotels_options_page(){
 
 				<?php 
 
-					if( isset( $_GET['status'] ) && $_GET['status'] == 1 ){
+					if( isset( $_GET['status'] ) && ($_GET['status'] == 1 || $_GET['status'] == 2) ){
 					?>
 							<div id="message" class="updated notice notice-success is-dismissible">
-								<p>New holes was adding successful!</p>
+								<p><?php echo $_GET['status'] == 1 ? "New holes was adding successful!":"New holes was editing successful!" ?></p>
 								<button type="button" class="notice-dismiss">
 									<span class="screen-reader-text">Dismiss this notice.</span>
 								</button>

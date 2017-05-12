@@ -1,0 +1,1139 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"php",
+				"php"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"re",
+				"req1	require_once …"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"add_",
+				"add_action"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bord",
+				"border-width"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"tra",
+				"transition-all"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pos",
+				"pos:r	position:relative"
+			],
+			[
+				"the",
+				"theme-primary"
+			],
+			[
+				"textal",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-cover"
+			],
+			[
+				"txt",
+				"text-primary"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"body",
+				"body-font"
+			],
+			[
+				"fa",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bacg",
+				"background-position"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"my-bo",
+				"my-border-radius"
+			],
+			[
+				"pad",
+				"pad	padding"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"liss",
+				"list-style-type"
+			],
+			[
+				"col",
+				"color_chroma"
+			],
+			[
+				"di",
+				"dis	display"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"remov",
+				"removeClass	.removeClass()"
+			],
+			[
+				"color",
+				"color_chroma"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"ch",
+				"children	.children()"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"colum",
+				"column-rule"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"txtal",
+				"text-align"
+			],
+			[
+				"fadeOut",
+				"fadeOutDown"
+			],
+			[
+				"anima",
+				"animated"
+			],
+			[
+				"ani",
+				"animation-delay"
+			],
+			[
+				"color_bg_",
+				"color_bg_dark"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"san",
+				"sans-serif"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"td",
+				"td:n	text-decoration:none"
+			],
+			[
+				"fade",
+				"fadeToggle	.fadeToggle()"
+			],
+			[
+				"sli",
+				"slideToggle	.slideToggle()"
+			],
+			[
+				"my-b",
+				"my-border-radius"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"liner",
+				"linear-gradient"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"my-anima",
+				"my-animation-direction"
+			],
+			[
+				"my-ani",
+				"my-animation-iteration-count"
+			],
+			[
+				"act",
+				"act-btn"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"bor",
+				"border-top-radius"
+			],
+			[
+				"rgb",
+				"rgba"
+			],
+			[
+				"zi",
+				"z-index"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"mai",
+				"main-font-size"
+			],
+			[
+				"cur",
+				"cur:c	cursor:crosshair"
+			],
+			[
+				"color_",
+				"color_simple"
+			],
+			[
+				"bgi",
+				"bgi	background-image"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"id",
+				"student_id"
+			],
+			[
+				"dri",
+				"driver_id"
+			],
+			[
+				"set",
+				"Set"
+			],
+			[
+				"scr",
+				"src"
+			],
+			[
+				"picture",
+				"picture-letter-a"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"t",
+				"tel"
+			],
+			[
+				"tab_",
+				"tab_content"
+			],
+			[
+				"bxsh",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"border-top",
+				"border-top-style"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"disp",
+				"display"
+			],
+			[
+				"tr",
+				"trsde	transition-delay"
+			],
+			[
+				"trn",
+				"transition"
+			],
+			[
+				"p",
+				"pb	padding-bottom"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"trs",
+				"trs	transition"
+			],
+			[
+				"bn",
+				"bd:n	border:none"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"a",
+				"transparent"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"tsh",
+				"tsh	text-shadow: ${1:hoff} ${2:voff} ${3:blur} ${4:#000};"
+			],
+			[
+				"lstn",
+				"list:n	list-style-type:none"
+			],
+			[
+				"border-sp",
+				"border-collapse"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"bg",
+				"bgo	background-origin"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"posa",
+				"pos-a	position: absolute;"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3066,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "front-page.php",
+			"settings":
+			{
+				"buffer_size": 16271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/OpenServer/domains/Wordpress/wp-content/themes/twd/header-twd.php",
+			"settings":
+			{
+				"buffer_size": 1223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/customizer/theme_options.php",
+			"settings":
+			{
+				"buffer_size": 10082,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package control: ",
+		"selected_items":
+		[
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"LiveReload: Enable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"prefere",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 154.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/OpenServer/domains/Wordpress/wp-content",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes"
+	],
+	"file_history":
+	[
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page_subscribe.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/process/save_options.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page_edit_hotel.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/hotels_data.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/init_admin.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/front-page.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page_hotels.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/enqueue_admin.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/classes/class-twd-hotels-table.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/menus_admin.php",
+		"/C/Users/Олюшка/AppData/Roaming/Sublime Text 3/Packages/User/my.sublime-snippet",
+		"/E/OpenServer/domains/Wordpress/wp-admin/includes/class-wp-list-table.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/users.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/user-new.php",
+		"/D/dima/boris/www/youstyle.by/core/includes/admin/sub/modules.export_products.php",
+		"/D/dima/boris/www/youstyle.by/core/functions/cart_functions.php",
+		"/D/dima/boris/www/youstyle.by/core/functions/functions.php",
+		"/D/dima/boris/www/youstyle.by/core/functions/order_functions.php",
+		"/D/dima/boris/www/youstyle.by/core/includes/authorization.php",
+		"/D/dima/boris/www/youstyle.by/core/includes/processor/cart.php",
+		"/D/dima/boris/www/youstyle.by/core/includes/shopping_cart.php",
+		"/D/dima/boris/www/youstyle.by/Обновляем shopcms для перехода на версию php 5.4 +",
+		"/E/OpenServer/domains/Wordpress/wp-config.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/classes/class-twd-hotel-table.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page_add_hotel.php",
+		"/D/dima/boris/www/youstyle.by/core/config/connect.inc.php",
+		"/C/Users/Олюшка/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/assets/admin/option-theme.js",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/assets/admin/admin-style.css",
+		"/E/OpenServer/domains/wordpress/wp-admin/admin-post.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/front/activate.php",
+		"/E/OpenServer/domains/wordpress/wp-admin/options-general.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page_about_us.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/menus.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/api_init.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/options_page.php",
+		"/E/OpenServer/domains/wordpress/wp-admin/user-edit.php",
+		"/E/OpenServer/domains/wordpress/wp-admin/users.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/about_us_options_page.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/widget-shortcode.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/includes/class-wp-users-list-table.php",
+		"/D/dima/boris/www/youstyle.by/core/classes/class.ajax.php",
+		"/D/dima/boris/www/youstyle.by/webim/client.php",
+		"/D/dima/boris/www/youstyle.by/core/tpl/user/default/product_brief.tpl.html",
+		"/E/OpenServer/domains/Wordpress/wp-admin/options-reading.php",
+		"/D/dima/boris/www/youstyle.by/data/default/user.js",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/assets/twd/twd-style.css",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/init.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/admin/enqueue.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/options-general.php",
+		"/D/dima/boris/www/youstyle.by/core/includes/database/mysql.php",
+		"/D/dima/boris/www/youstyle.by/core/config/tables.inc.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/shortcode/twd_shortcode_handler.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/customizer/theme-options.php",
+		"/E/OpenServer/domains/backup/wp-content/plugins/shapely-companion/inc/widgets/widget-video.php",
+		"/E/OpenServer/domains/backup/wp-content/plugins/shapely-companion/inc/widgets/widget-video-and-form.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/register_widgets.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/widget-instagram_shortcode.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/assets/twd/twd-script.js",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/start/theme_support.php",
+		"/E/OpenServer/domains/backup/wp-content/plugins/shapely-companion/inc/shapely-widgets.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/register_sidebars.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/widgets_init.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets/widgets_init",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/widgets",
+		"/E/OpenServer/domains/player/Test-1-youtube/css/my-css.css",
+		"/E/OpenServer/domains/player/Test-1-youtube/js/my-js.js",
+		"/E/OpenServer/domains/player/Test-1-youtube/index.html",
+		"/E/OpenServer/domains/player/Test-1-youtube/my-js.js",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/functions.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/functions-twd.php",
+		"/E/OpenServer/domains/backup/wp-content/plugins/shapely-companion/assets/jq.mb.yt.play/video-background-start.js",
+		"/E/OpenServer/domains/backup/wp-content/themes/shapely/style.css",
+		"/E/OpenServer/domains/backup/wp-content/plugins/shapely-companion/assets/jq.mb.yt.play/jquery.mb.YTPlayer.min.js",
+		"/E/OpenServer/domains/backup/wp-content/themes/twentyseventeen/style.css",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twd/includes/front/enqueue.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twd/includes/plugins/require_plugins.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/style.css",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twd/includes/front/add_fonts.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/includes/theme-options.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twd/index.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentyseventeen/style.css",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/sauron/functions.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/twd/lib/twd-style.css",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/footer-twd.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/front-page.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/header-twd.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/twd/framework/theme-options.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/functions.php",
+		"/C/Users/Олюшка/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/Олюшка/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/Олюшка/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/E/OpenServer/domains/Wordpress/wp-content/plugins/mail-subscribe-list/index.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/plugins/mail-subscribe-list/sml.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/page-twd.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/silicon-blogger/functions.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/twd/TGMPA-TGM-Plugin-Activation-c626d0d/example.php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/.gitignore",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/front-page (2).php",
+		"/E/OpenServer/domains/Wordpress/wp-content/themes/twentyseventeen/tpl_my-page.php",
+		"/D/dima/upwork/#4_landing_travel_germany/index.html",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentyseventeen/front-page.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentyseventeen/functions.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentyseventeen/page.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/plugins.php",
+		"/E/OpenServer/domains/Wordpress/wp-admin/post.php",
+		"/E/OpenServer/domains/Wordpress/wp-includes/pluggable.php",
+		"/D/dima/upwork/#4_landing_travel_germany/var.less",
+		"/D/dima/upwork/#4_landing_travel_germany/mixins.less",
+		"/D/dima/upwork/#4_landing_travel_germany/style.less",
+		"/D/dima/upwork/#4_landing_travel_germany/script.js",
+		"/D/dima/upwork/#1_landing_niderlands/index.html",
+		"/D/dima/upwork/#1_landing_niderlands/less/major.less",
+		"/D/dima/upwork/#4_landing_travel_germany/startbootstrap-new-age-gh-pages/less/variables.less",
+		"/D/dima/upwork/#4_landing_travel_germany/startbootstrap-new-age-gh-pages/less/new-age.less",
+		"/D/dima/upwork/#4_landing_travel_germany/startbootstrap-new-age-gh-pages/js/new-age.js",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentysixteen/page.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/twentysixteen/functions.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/js/wdi_instagram.js",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/views/WDIViewGalleryBox.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/controllers/WDIControllerImageBrowser_view.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/views/WDIViewThumbnails_view.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/models/WDIModelGalleryBox.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/views/WDIViewImageBrowser_view.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/controllers/WDIControllerGalleryBox.php",
+		"/E/OpenServer/domains/wordpress/wp-content/plugins/wd-instagram-feed/frontend/shortcode.php",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/wp-theme-howto-Step_0/css/main.css",
+		"/E/OpenServer/domains/wordpress/wp-content/themes/wp-theme-howto-Step_0/single.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"E:\\OpenServer\\domains\\Wordpress\\wp-content\\themes\\twd"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eg_setting_name",
+			"eg_setting_name2",
+			"eg_setting_name",
+			"textarea_hotel_description",
+			"input_hotel_name",
+			"input_hotel_id",
+			"title",
+			"parent_file",
+			"title",
+			"$title",
+			"Users",
+			"session_unregister",
+			"echo",
+			"Hotels_data",
+			"twd_save_about_us_options",
+			"+=\n",
+			"class=\"\"",
+			"TWD Theme Settings",
+			"form",
+			"wrap",
+			"column_headers",
+			"single_row",
+			"get_role_list",
+			"doCart",
+			"wrap",
+			"twd_theme_options_page",
+			"twd_admin_enqueue",
+			"in-widget-title",
+			"TWD",
+			"shapely",
+			"$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' ); ?>",
+			"show",
+			"player",
+			"iframe",
+			"onYouTubeIframeAPIReady",
+			"tag",
+			"tag.src",
+			"mb_YTPlayer",
+			"transiti",
+			"background",
+			"custom-background",
+			"TWD_ASSETS",
+			"WDWT",
+			"TWD",
+			"h2-logo",
+			"kirki",
+			"services",
+			"bg-lighter",
+			"bg-bg-lighter",
+			"chro",
+			"cheo",
+			"wp_footer",
+			"admin",
+			"admin-bar",
+			"admin-bar.min.js",
+			"get_footer",
+			"get_stylesheet_uri",
+			"enqueue_styles",
+			"inc",
+			"intro-lead-in",
+			"btn-default",
+			"form-btn",
+			"contactForm",
+			"explanation",
+			"vendor",
+			"padding100",
+			"explanation",
+			"border",
+			"no-",
+			"black-transparent-ground",
+			"lacktransparentground",
+			"no-padding",
+			"full-image-size",
+			"  box-shadow",
+			"no",
+			"service-heading",
+			"38",
+			"section#contact",
+			"section#contact ::-webkit-input-placeholder",
+			"form-input",
+			"shadow",
+			"service-heading",
+			"portfolio",
+			"no-p",
+			"block-wrapper-size",
+			"border-radius:",
+			" width: 80%;",
+			"col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,",
+			"container",
+			"nav",
+			"calc",
+			"intro-text",
+			"@media(max-width",
+			"top-bar-info",
+			"overf",
+			"over",
+			"navbar-brand",
+			"team",
+			"about",
+			"portfolio",
+			"about",
+			"services",
+			"font",
+			"z-index",
+			"close-modal",
+			"z-in",
+			"posi",
+			"font",
+			"affix",
+			"#top-bar ",
+			"intro-lead-in",
+			"agency",
+			"vendor",
+			"pri",
+			"section-heading",
+			"blank",
+			"api/openapi.js",
+			"https://vk.com/js/api/openapi.js",
+			"services",
+			"portfolio",
+			"service-icon",
+			"background-cover",
+			">\n",
+			"add-free-for-review",
+			"min-width",
+			"simple",
+			"min-width",
+			"max-width"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"twd",
+			"TWD",
+			"11",
+			"4k",
+			"fhd",
+			"hd",
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"\"",
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"&gt;",
+			"&lt;",
+			"b",
+			"&lt;",
+			"&gt;",
+			"&gl;",
+			"&lt;",
+			"&lg;",
+			"&tl;",
+			"<h4>",
+			"&gt;",
+			"&lt;",
+			"script",
+			"!",
+			"class",
+			"}",
+			"sell_right",
+			"slder_container",
+			"c",
+			"ta",
+			":;",
+			";\n",
+			"center",
+			";\n",
+			"fff",
+			"}\n",
+			")\n",
+			":;",
+			"a",
+			"ib",
+			";\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								595,
+								608
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11625,
+								11625
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 29.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/OpenServer/domains/Wordpress/wp-content/themes/twd/header-twd.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								896
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "includes/customizer/theme_options.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1541,
+								1557
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 412.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 360.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

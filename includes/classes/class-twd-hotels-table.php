@@ -88,8 +88,8 @@ class Twd_Hotels_List_Table extends WP_List_Table {
 
 	function column_hotel_id($item) {
 		$actions = array(
-			'edit'      => sprintf('<a href="?page=%s&action=%s&hotel=%s">Edit</a>',$_REQUEST['page'],'edit',$item->hotel_id),
-			'delete'    => sprintf('<a href="?page=%s&action=%s&hotel=%s">Delete</a>',$_REQUEST['page'],'delete',$item->hotel_id),
+			'edit'      => sprintf('<a href=' . admin_url( 'admin.php?page=twd_edit_hotel_options' ) . '&action=%s&hotel=%s">Edit</a>','edit', $item->hotel_id),
+			'delete'    => sprintf('<a href="?page=%s&action=%s&hotel=%s">Delete</a>', $_REQUEST['page'], 'delete',$item->hotel_id),
 			);
 
 		return sprintf('%1$s %2$s', $item->hotel_id, $this->row_actions($actions) );

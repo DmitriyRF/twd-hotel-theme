@@ -352,14 +352,23 @@ main .bg-grey-lighter {
   color: white;
 }
 #services .icon512 {
-  background-image: url("img/icons.jpg");
+  /*background-image: url("img/icons.jpg");*/
   margin: 0 auto;
   display: block;
-  background-size: 200%;
+  /*background-size: 200%;*/
   height: 256px;
   width: 256px;
   overflow: hidden;
   border-radius: 5px;
+  position: relative;
+}
+#services .icon512 img{
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #services .icon512 {
@@ -367,7 +376,7 @@ main .bg-grey-lighter {
     width: 200px;
   }
 }
-#services .icon-num-1 {
+/*#services .icon-num-1 {
   background-position: right bottom;
 }
 #services .icon-num-2 {
@@ -378,7 +387,7 @@ main .bg-grey-lighter {
 }
 #services .icon-num-4 {
   background-position: right top;
-}
+}*/
 #services .service-wrapper {
   margin: 15px 0px 0 0;
   background-color: white;

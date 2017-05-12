@@ -23,7 +23,8 @@ get_header($name); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main main" role="main">
-        <section id="about" class="bg-grey-lighter">
+    <?php $value = get_theme_mod( 'about_us_colors'); ?>
+        <section id="about" style="<?php echo 'background-color: ' . $value['f_section'] . ';'; ?>" class="bg-grey-lighter">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7">
@@ -32,18 +33,18 @@ get_header($name); ?>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-5">
-                        <div class="colomn-about">
+                        <div class="colomn-about" style="<?php  echo 'background-color: ' . $value['f_background'] . ';'; ?>">
                             <div class="text-center">
-                                <i class="fa fa-3x fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-3x fa-users" aria-hidden="true" style="<?php  echo 'background-color: ' . $value['f_background'] . ';'; ?>"></i>
                             </div>
-                            <h1 class="h1-about">
+                            <h1 class="h1-about" style="<?php  echo 'color: ' . $value['f_text'] . ';'; ?>">
                                 <?php
                                         if( !empty($theme_options['about_us_header']) ){
                                             echo $theme_options['about_us_header'];
                                         }
                                 ?>
                             </h1>
-                            <p class="p-about">
+                            <p class="p-about" style="<?php  echo 'color: ' . $value['f_text'] . ';'; ?>">
                                 <?php
                                     if( !empty($theme_options['about_us_text']) ){
                                                 echo $theme_options['about_us_text'];
@@ -55,30 +56,26 @@ get_header($name); ?>
                 </div>
             </div>
         </section>
-        <section id="suggestions" class="">
+        <?php $value2 = get_theme_mod( 'hotels_colors'); ?>
+        <section id="suggestions"   style="<?php  echo 'color: ' . $value2['h_text'] . ';';
+                                                echo 'background-color: ' . $value2['h_section'] . ';'; ?>"  >
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="text-center">
                             <i class="fa fa-3x fa-bed" aria-hidden="true"></i>
                         </div>
-                        <h1 class="h1-section">Hotel suggestions</h1>
-                        <p class="p-description-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                        <h1 class="h1-section"><?php  echo get_theme_mod( 'hotels_header'); ?></h1>
+                        <p class="p-description-section"><?php  echo get_theme_mod( 'hotels_header_description'); ?></p>
                     </div>
                 </div>
                 <div class="row">
                 <?php
                     foreach ($table_objects as $key => $hotel) {
-                                    // hotel_id
-                                    // hotel_name 
-                                    // hotel_description
-                                    // hotel_loves
-                                    // hotel_image_url
-                                    // hotel_amenities
-                                    // hotel_contacts
+                                    // hotel_id // hotel_name // hotel_description // hotel_loves // hotel_image_url // hotel_amenities // hotel_contacts
                 ?>    
                     <div class="col-xs-12 col-sm-4">
-                        <div class="hotel-wrapper">
+                        <div class="hotel-wrapper" style="<?php  echo 'background-color: ' . $value2['h_background'] . ';'; ?>">
                             <?php
                                 $any_images =  explode('| ', $hotel->hotel_image_url);
                             ?>
@@ -145,7 +142,7 @@ get_header($name); ?>
                                      ?>
                                 </table>
                             </div>
-                            <div class="amenities">
+                            <div class="amenities" style="<?php  echo 'background-color: ' . $value2['h_background_in'] . ';'; ?>">
                                 <h5 class="h-amenities-hotel">TWD amenities</h5>
                                 <ul class="ul-amenities">
                                     
@@ -202,45 +199,47 @@ get_header($name); ?>
                 </div>
             </div>
         </section>
-        <section id="services" class="parallax-window" data-parallax="scroll" data-image-src="img/baner-bg-paralax-b.jpg">
+        <section id="services" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_theme_mod( 'our_service_image'); ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="text-center">
                             <i class="fa fa-3x fa-line-chart" aria-hidden="true"></i>
                         </div>
-                        <h1 class="h1-section">Our services</h1>
-                        <p class="p-description-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                        <h1 class="h1-section"><?php  echo get_theme_mod( 'our_service_header'); ?></h1>
+                        <p class="p-description-section"><?php  echo get_theme_mod( 'our_service_description'); ?></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="service-wrapper">
                             <div class="icon-service">
-                                <div class="icon512 icon-num-1"></div>
+                                <div class="icon512 icon-num-1">
+                                    <img src="<?php echo get_theme_mod( 'services_image_1'); ?>" alt="<?php  echo get_theme_mod( 'services_name_1'); ?>">
+                                </div>
                             </div>
-                            <h6 class="h-service-name">Content Creation</h6>
+                            <h6 class="h-service-name"><?php  echo get_theme_mod( 'services_name_1'); ?></h6>
+                            <?php $services_1 = get_theme_mod( 'services_text_li_1'); ?>
                             <ul class="ul-service-point">
-                                <li>Lorem ipsum dolor.</li>
-                                <li>Facere eligendi, sint.</li>
-                                <li>Ipsum, totam, unde!</li>
-                                <li>Hic, aperiam, quibusdam.</li>
-                                <li>Eaque, dolorem, est.</li>
+                                <?php foreach( $services_1 as $service_1 ) : ?>
+                                    <li><?php echo $service_1['link_text']; ?></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="service-wrapper">
                             <div class="icon-service">
-                                <div class="icon512 icon-num-2"></div>
+                                <div class="icon512">
+                                    <img src="<?php echo get_theme_mod( 'services_image_2'); ?>" alt="<?php  echo get_theme_mod( 'services_name_2'); ?>">
+                                </div>
                             </div>
-                            <h6 class="h-service-name">Data and Analytics</h6>
+                            <h6 class="h-service-name"><?php  echo get_theme_mod( 'services_name_2'); ?></h6>
+                            <?php $services_2 = get_theme_mod( 'services_text_li_2'); ?>
                             <ul class="ul-service-point">
-                                <li>Lorem ipsum dolor.</li>
-                                <li>Corrupti, in tempore.</li>
-                                <li>Sequi perferendis, delectus?</li>
-                                <li>Consequuntur, velit, ipsa.</li>
-                                <li>Eos consequatur, fugit!</li>
+                                <?php foreach( $services_2 as $service_2 ) : ?>
+                                    <li><?php echo $service_2['link_text']; ?></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
@@ -248,50 +247,60 @@ get_header($name); ?>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="service-wrapper">
                             <div class="icon-service">
-                                <div class="icon512 icon-num-3"></div>
+                                <div class="icon512">
+                                    <img src="<?php echo get_theme_mod( 'services_image_3'); ?>" alt="<?php  echo get_theme_mod( 'services_name_3'); ?>">
+                                </div>
                             </div>
-                            <h6 class="h-service-name">Account Management</h6>
+                            <h6 class="h-service-name"><?php  echo get_theme_mod( 'services_name_3'); ?></h6>
+                            <?php $services_3 = get_theme_mod( 'services_text_li_3'); ?>
                             <ul class="ul-service-point">
-                                <li>Lorem ipsum dolor.</li>
-                                <li>Nam consequuntur, illo?</li>
-                                <li>Totam, aperiam saepe.</li>
-                                <li>Delectus, deserunt nisi.</li>
-                                <li>Laborum, ipsam ullam.</li>
+                                <?php foreach( $services_3 as $service_3 ) : ?>
+                                    <li><?php echo $service_3['link_text']; ?></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="service-wrapper">
                             <div class="icon-service">
-                                <div class="icon512 icon-num-4"></div>
+                                <div class="icon512">
+                                    <img src="<?php echo get_theme_mod( 'services_image_4'); ?>" alt="<?php  echo get_theme_mod( 'services_name_4'); ?>">
+                                </div>
                             </div>
-                            <h6 class="h-service-name">Instagram Advertising</h6>
+                            <h6 class="h-service-name"><?php  echo get_theme_mod( 'services_name_4'); ?></h6>
+                            <?php $services_4 = get_theme_mod( 'services_text_li_4'); ?>
                             <ul class="ul-service-point">
-                                <li>Lorem ipsum dolor.</li>
-                                <li>Delectus, rerum, dolor.</li>
-                                <li>Temporibus, doloribus, assumenda.</li>
-                                <li>Id, cupiditate, omnis.</li>
-                                <li>Consectetur, pariatur, sequi.</li>
+                                <?php foreach( $services_4 as $service_4 ) : ?>
+                                    <li><?php echo $service_4['link_text']; ?></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="form" class="">
+        <?php 
+        if( get_option('use_shortcode_section') == 1 && get_option('use_shortcode_section')!="" ){
+        ?>
+        <?php $value3 = get_theme_mod( 'subscribe_colors'); ?>
+        <section id="form" class="" style="<?php  echo 'color: ' . $value3['s_text'] . ';';
+                                                echo 'background-color: ' . $value3['s_background'] . ';'; ?>">
             <div class="container">
                 <div class="row">
                     <div class="text-center">
                         <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
                     </div>
-                    <h1 class="h1-section">Subscribe</h1>
-                    <p class="p-description-subscribe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus obcaecati dolor quis vel eos natus ratione cupiditate quia sapiente reprehenderit voluptas repellendus, culpa, cum provident? Tempora dolorum quam recusandae.</p>
+                    <h1 class="h1-section"><?php  echo get_theme_mod( 'subscribe_header'); ?></h1>
+                    <p class="p-description-subscribe"><?php  echo get_theme_mod( 'subscribe_description'); ?></p>
                     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-                            <?php echo do_shortcode('[contact-form-7 id="38" title="Sub"]');?>
+                            <?php echo do_shortcode(get_option('Shortcode_by_contact_form')); ?>
                     </div>
                 </div>
             </div>
         </section>
+        <?php 
+        }
+        ?>        
         <section id="instagram" class="bg-grey-lighter">
             <?php dynamic_sidebar( 'sidebar-for-shotrcode' ); ?>
         </section>

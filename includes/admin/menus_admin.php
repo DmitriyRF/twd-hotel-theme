@@ -54,6 +54,18 @@ function twd_admin_menus(){
 
 		'twd_theme_options',
 		
+        'Edit hotel',
+        'Edit hotel',
+        'manage_options',
+        'twd_edit_hotel_options',
+        'twd_edit_hotel_options_page'
+
+	);
+
+	add_submenu_page(
+
+		'twd_theme_options',
+		
         'Contsct form 7',
         'Subscribe',
         'manage_options',

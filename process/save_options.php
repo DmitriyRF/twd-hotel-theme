@@ -43,3 +43,28 @@ function twd_save_new_hotel(){
 	wp_redirect( admin_url( 'admin.php?page=twd_hotels_options&status=1' ) );
 
 }
+
+function twd_edit_current_hotel(){
+
+		if( ! current_user_can( 'edit_theme_options' ) ){
+			wp_die("You are not allowed to be on this page!");
+		}
+		check_admin_referer('twd_edit_hotel_verify');
+
+		require_once (  dirname( dirname( __FILE__ ) ) . '/includes/admin/hotels_data.php');
+
+		$if_null_image_slider 		=	isset($_POST['image_slider']) ? implode("| ", $_POST['image_slider']) : "";
+		$if_null_input_amenities 	=	isset($_POST['input_amenities']) ? implode("| ", $_POST['input_amenities']) : "";
+		$if_null_input_love_fact 	=	isset($_POST['input_love_fact']) ? implode("| ", $_POST['input_love_fact']) : "";
+
+		wpdb_update_hotel(		$_POST['input_hotel_id'], 
+								$_POST['input_hotel_name'], 
+								$_POST['textarea_hotel_description'], 
+								$if_null_input_love_fact, 
+								$if_null_image_slider , 
+								$if_null_input_amenities, 
+								implode("| ", $_POST['input_contact']	));
+
+		wp_redirect( admin_url( 'admin.php?page=twd_hotels_options&status=2' ) );
+
+}
