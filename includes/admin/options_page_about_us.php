@@ -53,7 +53,7 @@ function twd_theme_options_page(){
 						<label for="input_header_2_about_us" class="" ><?php _e('Description for header', 'twd');?></label>
 					</th>
 					<td>
-						<input id="input_header_2_about_us" class="" size="50" value="<?php echo $theme_options['about_us_header_2'];?>" name="twd_header_2_about_us" type="text">
+						<input id="input_header_2_about_us" class="" size="50" readonly value="<?php echo $theme_options['about_us_header_2'];?>" name="twd_header_2_about_us" type="text">
 					</td>
 				</tr>
 				<tr>
@@ -71,7 +71,7 @@ function twd_theme_options_page(){
 					<td>
 						<div class="input-group">
 							<span class="input-group-btn">
-								<button id="button_image_image_about_us" class="input-group-button" type="button"><?php _e('Upload image', 'twd'); ?></button>
+								<button class="button_image_about_us input-group-button" type="button"><?php _e('Upload image', 'twd'); ?></button>
 							</span>
 							<input id="image_image_about_us" class="input-group-text" size="50" value="<?php echo $theme_options['about_us_img'];?>" name="twd_image_about_us" type="text">
 						</div>

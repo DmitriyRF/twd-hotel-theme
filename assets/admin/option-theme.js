@@ -7,7 +7,11 @@ jQuery(function($){
 		multiple: 							false
 	});
 	var input_image_next; 
-	// $('.button_image_about_us').on("click", function(event) {
+	$('.button_image_about_us').on("click", function(event) {
+		event.preventDefault();
+		input_image_next = $(this).parent().next();
+		frame.open();
+	});
 	$('.table_add_image').on("click", '.button_image_about_us', function(event) {
 		event.preventDefault();
 		input_image_next = $(this).parent().next();

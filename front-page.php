@@ -12,7 +12,7 @@
  * @version 1.0
  */
 $theme_options                  = get_option('twd_opts');
-$name                           = __('TWD','twd');
+$name                           = 'twd';
 
     global $wpdb;
     $table_name                 = $wpdb->get_blog_prefix() . 'twd_hotels';

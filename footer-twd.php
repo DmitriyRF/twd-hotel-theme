@@ -15,7 +15,7 @@
 ?>
 
 		</div><!-- #content -->
-        <?php if( isset( get_theme_mod( 'footer_header') ) ){ ?>
+        <?php if( get_theme_mod( 'footer_header') != ''){ ?>
 		<footer id="colophon" class="site-footer footer" role="contentinfo">
             <div class="container">
                 <div class="row">
